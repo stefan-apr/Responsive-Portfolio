@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: hsl(255, 0%, 30%);
+    background-color: hsl(46, 0%, 95%);
+}
+
+h1 {
+    color: hsl(177, 70%, 34%);
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.tab {
+    background-color: hsl(177, 70%, 34%);
+    color: hsl(255, 100%, 100%);
+    float: left;
+    padding: 25px;
+    margin-left: 150px;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+h1 .tab {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main {
+    background-color: hsl(255, 100%, 100%);
+    border-color:hsl(46, 0%, 50%);
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    padding: 25px;
+    margin-bottom: 100px;
+    color: hsl(46, 0%, 50%);
+    overflow: auto;
+}
+
+.footer {
+    background-color: hsl(46, 20%, 20%);
+    width: 100%;
+    height: 15px;
+    border-top: 8px hsl(177, 70%, 34%) solid;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 25px;
+    font-size: 6pt;
+    color: hsl(255, 100%, 100%);
+}
+
+figure {
+    overflow: auto;
+    float: left;
+    width: 35%;
+}
+
+figcaption {
+    background-color: hsl(177, 70%, 34%);
+    color: hsl(46, 0%, 95%);
+    position: relative;
+    width: 180px;
+    text-align: center;
+    top: 125px;
+    padding-top: 10px;
+    height: 20px;
+    font-size: 10pt;
+}
+
+.header {
+    background-color: hsl(255, 100%, 100%);
+    border-bottom: 1pt solid;
+    border-color: hsl(46, 0%, 50%);
+    height: 75px;
+    width: 100%;
+}
+
+.links {
+    float: right;
+    margin-right: 150px;
+    padding: 25px;
+    
+}
+
+.pageLink {
+    display: inline-block;
+    text-decoration: none;
+    color: hsl(46, 0%, 50%);
+}
+
+#midLink {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 1px solid hsl(46, 0%, 70%);
+    border-right: 1px solid hsl(46, 0%, 70%);
+}
+
+.bodyHeader {
+    margin: 10px;
+    border-bottom: 1pt solid;
+    border-color: hsl(46, 0%, 50%);
+    height: 60px;
+}
+
+.bP {
+    line-height: 1.6em;
+}
+
+.bPWrap {
+    float: left;
+
+}
+
+.bpSpan {
+    float: left;
+}
+
+.col1 {
+    float: left;
+    margin-right: 20px;
+    width: 180px;
+    height: 130px;
+    margin-bottom: 30px;
+}
+
+.col2 {
+    float: left;
+    margin-right: 20px;
+    width: 180px;
+    height: 130px;
+    margin-bottom: 30px;
+}
+
+.singleIMG {
+    float: left;
+    margin-right: 15px;
+    width: 180px;
+    height: 130px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 13px;
+    margin-top: 4px;
+}
+
+input {
+    margin-bottom: 13px;
+    margin-top: 4px; 
+    width: 100%;
+}
+
+.submitButton {
+    background-color: hsl(177, 70%, 34%); 
+    color: hsl(46, 0%, 95%);
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+}
+
+@media only screen and (max-width: 850px) {
+    [class = "links"] {
+        margin-right: 5%;
+    }
+    [class = "tab"] {
+        margin-left: 5%;
+    }
+    [class = "main"] {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    [class = "col2"] {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    [class = "main"] {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        width: 90%;
+        overflow: auto;
+    }
+
+    [figure] {
+        width: 90%;
+        margin: 0px;
+        margin-left: 5%;
+        display: inline-block;
+        clear: both;
+        overflow: visible;
+        float: none;
+    }
+
+    [class = "col1"] {
+        clear: both;
+        overflow: visible;
+    }
+
+    [class = "col2"] {
+        clear: both;
+        overflow: visible;
+    }
+
+    [class = "tab"] {
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+    
+    [class = "links"] {
+        float: none;
+        margin-left: 30%;
+        padding-top: 5%;
+        display: inline-block;
+        clear: both;
+    }
+
+    [class = "singleIMG"] {
+        width: 90%;
+        float: left;
+        clear: both;
+        margin: 10px;
+        height: 40%;
+    }
+
+    [class = "bPWrap"] {
+        float: none;
+        width: 90%;
+    }
+
+    [class = "bPSpan"] {
+        float: none;
+        width: 90%;
+    }
+}
