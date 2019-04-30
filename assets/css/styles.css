@@ -18,6 +18,7 @@ h1 {
     margin-left: 150px;
     font-weight: bolder;
     font-size: 20pt;
+    border-radius: 15px;
 }
 
 h1 .tab {
@@ -105,13 +106,28 @@ figcaption {
     height: 60px;
 }
 
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+#user-warning {
+    color: darkred;
+}
+
 .bP {
     line-height: 1.6em;
 }
 
 .bPWrap {
     float: left;
-
 }
 
 .bpSpan {
@@ -161,6 +177,16 @@ input {
     padding-left: 15px;
     padding-right: 15px;
     width: auto;
+}
+
+#major-header, #minor-header {
+    display: block;
+    float: left;
+}
+
+#major-projects, #minor-projects {
+    height: auto;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 850px) {
