@@ -57,6 +57,15 @@ figure {
     width: 35%;
 }
 
+.fig-image-div {
+    float: left;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid hsl(46, 0%, 50%);
+    background-color: whitesmoke;
+}
+
 figcaption {
     background-color: hsl(177, 70%, 34%);
     color: hsl(46, 0%, 95%);
@@ -67,6 +76,7 @@ figcaption {
     padding-top: 10px;
     height: 20px;
     font-size: 10pt;
+    border-radius: 10px;
 }
 
 .header {
@@ -136,18 +146,31 @@ figcaption {
 
 .col1 {
     float: left;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     width: 180px;
     height: 130px;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
 .col2 {
     float: left;
-    margin-right: 20px;
+    /*margin-right: 20px;*/
     width: 180px;
     height: 130px;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
+}
+
+.col1, .col2 {
+    object-fit: cover;
+}
+
+#ryu {
+    object-fit: cover;
+    object-position: 50% 15%;
+}
+
+#rock, #forum, #dice, #news, #friend, #seasons {
+    object-fit: contain;
 }
 
 .singleIMG {
@@ -202,9 +225,6 @@ input {
         width: 90%;
         margin-bottom: 5%;
     }
-    [class = "col2"] {
-        margin-right: 0px;
-    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -213,20 +233,45 @@ input {
         margin-right: 5%;
         margin-bottom: 5%;
         width: 90%;
-        overflow: auto;
+        overflow: none;
     }
 
-    [figure] {
+    [id = "major-header"] {
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+
+    [id = "minor-header"] {
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+
+    [class = "bodyHeader"] {
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+
+    figure {
         width: 90%;
+        height: auto;
         margin: 0px;
-        margin-left: 5%;
-        display: inline-block;
+        display: block;
+        float: left;
         clear: both;
-        overflow: visible;
-        float: none;
+        overflow: none;
+    }
+
+    figcaption {
+        left: 25%;
+    }
+
+    [class = "fig-image-div"] {
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     [class = "col1"] {
+        float: left;
         clear: both;
         overflow: visible;
     }
@@ -244,7 +289,7 @@ input {
     
     [class = "links"] {
         float: none;
-        margin-left: 30%;
+        margin-left: 23%;
         padding-top: 5%;
         display: inline-block;
         clear: both;
