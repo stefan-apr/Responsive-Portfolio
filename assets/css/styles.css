@@ -10,6 +10,24 @@ h1 {
     font-size: 20pt;
 }
 
+.detail-div {
+    position: relative;
+}
+
+.details {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.details:hover {
+    height: 35px;
+    width: auto;
+}
+
 .tab {
     background-color: hsl(177, 70%, 34%);
     color: hsl(255, 100%, 100%);
