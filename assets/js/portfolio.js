@@ -1,8 +1,33 @@
+import details from "./details.js";
+console.log(details);
+
 $(document).ready(function() {
+    var chosen;
     $(".details").each(function() {
         $(this).click(function() {
-            let chosen = $(this).attr("id");
-            console.log(chosen);
+            chosen = $(this).attr("id");
+            for(let i = 0; i < details.length; i++) {
+                if(chosen === details[i].id) {
+                    var detail = details[i];
+                }
+            }
+            $("#port").css("display", "none");
+            $("#updated-header").css("display", "none");
+            $("#back").css("display", "block");
+            $("#about").empty();
+            $("#about").append("<br>");
+            $("#about").append("<h2>" + detail.properName + "</h2>");
+            $("#about").append("<br><br>");
+            $("#about").append("<img src='" + detail.img + "' alt='Profile' class='singleIMG'>");
+            $("#about").append("<p>" + detail.desc + "</p>");
+            $("#about").css("display", "block");
         });
+    });
+
+    $("#back").click(function() {
+        $("#about").css("display", "none");
+        $("#back").css("display", "none");
+        $("#updated-header").css("display", "inline");
+        $("#port").css("display", "block");
     });
 });

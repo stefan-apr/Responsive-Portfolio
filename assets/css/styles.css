@@ -134,6 +134,16 @@ figcaption {
     height: 60px;
 }
 
+h2 {
+    font-weight: bolder;
+    font-size: 16pt;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 13pt;
+}
+
 .visible {
     visibility: visible;
     opacity: 1;
@@ -218,11 +228,17 @@ input {
     padding-left: 15px;
     padding-right: 15px;
     width: auto;
+    border-radius: 10px;
+}
+
+#back {
+    display: none;
 }
 
 #major-header, #minor-header {
     display: block;
     float: left;
+    height: auto;
 }
 
 #major-projects, #minor-projects {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
         <title>Index</title>
@@ -19,14 +20,16 @@
 
         <div class="main">
             <div class="bodyHeader">
-                <h1>Portfolio</h1>
+                <h1 id="updated-header">Portfolio</h1>
+                <button id="back" class="submitButton">Back to Portfolio</button>
             </div>
-            <div id="major-projects">
+            <div id="port">
+                <div id="major-projects">
                     <br>
                     <div id="major-header">
                         <h2>Major Projects:</h2>
                     </div>
-                    <br>
+                    <br><br>
                     <figure>
                         <a href="https://github.com/stefan-apr/Rain-on-Your-Parade">
                             <figcaption>Rain on your Parade</figcaption>
@@ -54,129 +57,133 @@
                         </div>
                     </figure>
                 </div>
-            <div id="minor-projects">
-                <br><br>
-                <div id="minor-header">
-                    <h3>Minor Projects:</h3>
+                <div id="minor-projects">
+                    <br><br>
+                    <div id="minor-header">
+                        <h3>Minor Projects:</h3>
+                    </div>
+                    <br><br>
+                    <figure>
+                        <a href="https://github.com/stefan-apr/Word-Guess-Game">
+                            <figcaption>Seahawks Hangman</figcaption>
+                        </a>
+                        <div class="fig-image-div">
+                            <div class="detail-div">
+                                <img src="assets/images/details.jpg" alt="details" class="details" id="hangman">
+                            </div>
+                            <a href="https://stefan-apr.github.io/Word-Guess-Game/">
+                                <img src="assets/images/seahawks.png" alt="Hangman" class="col1">
+                            </a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <a href="https://github.com/stefan-apr/street_fighter_game">
+                            <figcaption>Street Fighter RPG Game</figcaption>
+                        </a>
+                        <div class="fig-image-div">
+                            <div class="detail-div">
+                                <img src="assets/images/details.jpg" alt="details" class="details" id="sf-rpg">
+                            </div>
+                            <a href="https://stefan-apr.github.io/street_fighter_game/">
+                                <img src="assets/images/ryu.png" alt="RPG Game" id="ryu" class="col2">
+                            </a>    
+                        </div>  
+                    </figure>
+                    <figure>
+                        <a href="https://github.com/stefan-apr/TriviaGame">
+                            <figcaption>Latin Phrases Trivia Game</figcaption>
+                        </a>
+                        <div class="fig-image-div">
+                            <div class="detail-div">
+                                <img src="assets/images/details.jpg" alt="details" class="details" id="trivia">
+                            </div>
+                            <a href="https://stefan-apr.github.io/TriviaGame/">
+                                <img src="assets/images/forum.png" alt="Trivia Game" id="forum" class="col1">   
+                            </a> 
+                        </div>  
+                    </figure>
+                    <figure>
+                        <a href="https://github.com/stefan-apr/Bogosort">
+                            <figcaption>Bogosorter</figcaption>
+                        </a>
+                        <div class="fig-image-div">
+                            <div class="detail-div">
+                                <img src="assets/images/details.jpg" alt="details" class="details" id="bogo">
+                            </div>
+                            <a href="https://stefan-apr.github.io/Bogosort/">
+                                <img src="assets/images/dice.png" alt="Bogosorter" id="dice" class="col2">      
+                            </a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <a href="https://github.com/stefan-apr/RPS-Multiplayer">
+                            <figcaption>Rock Paper Scissors</figcaption>
+                        </a>
+                        <div class="fig-image-div">
+                            <div class="detail-div">
+                                <img src="assets/images/details.jpg" alt="details" class="details" id="rps">
+                            </div>
+                            <a href="https://stefan-apr.github.io/RPS-Multiplayer/">
+                                <img src="assets/images/rock.png" alt="Rock Paper Scissors" id="rock" class="col1">                              
+                            </a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <a href="https://github.com/stefan-apr/Giphy-Project">
+                            <figcaption>GIF Grabber</figcaption>
+                        </a>
+                        <div class="fig-image-div">
+                            <div class="detail-div">
+                                <img src="assets/images/details.jpg" alt="details" class="details" id="gif">
+                            </div>
+                            <a href="https://stefan-apr.github.io/Giphy-Project/">
+                                <img src="https://media.giphy.com/media/2uf3Q3X4PPv4Q/200w_d.gif" alt="GIF Grabber" class="col2">
+                            </a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <a href="https://github.com/stefan-apr/Friend_Finder">
+                            <figcaption>Friend Finder</figcaption>
+                        </a>
+                        <div class="fig-image-div">
+                            <div class="detail-div">
+                                <img src="assets/images/details.jpg" alt="details" class="details" id="friend-finder">
+                            </div>
+                            <a href="https://guarded-fortress-48319.herokuapp.com/">
+                                <img src="assets/images/friends.png" alt="Friend Finder" id="friend" class="col1">
+                            </a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <a href="https://github.com/stefan-apr/News-Feeder">
+                            <figcaption>News Scraper</figcaption>
+                        </a>
+                        <div class="fig-image-div">
+                            <div class="detail-div">
+                                <img src="assets/images/details.jpg" alt="details" class="details" id="news-feeder">
+                            </div>
+                            <a href="https://obscure-brushlands-59312.herokuapp.com/">
+                                <img src="assets/images/news.png" alt="News Scraper" id="news" class="col2">
+                            </a>
+                        </div>
+                    </figure>
+                    <figure>
+                        <a href="https://github.com/stefan-apr/Clicky">
+                            <figcaption>Pokemon Clicky Game</figcaption>
+                        </a>
+                        <div class="fig-image-div">
+                            <div class="detail-div">
+                                <img src="assets/images/details.jpg" alt="details" class="details" id="clicky-game">
+                            </div>
+                            <a href="https://stefan-apr.github.io/Clicky/">
+                                <img src="assets/images/sandslash.png" alt="Clicky Game" id="clicky" class="col1">                              
+                            </a>
+                        </div>
+                    </figure>
                 </div>
-                <br>
-                <figure>
-                    <a href="https://github.com/stefan-apr/Word-Guess-Game">
-                        <figcaption>Seahawks Hangman</figcaption>
-                    </a>
-                    <div class="fig-image-div">
-                        <div class="detail-div">
-                            <img src="assets/images/details.jpg" alt="details" class="details" id="hangman">
-                        </div>
-                        <a href="https://stefan-apr.github.io/Word-Guess-Game/">
-                            <img src="assets/images/seahawks.png" alt="Hangman" class="col1">
-                        </a>
-                    </div>
-                </figure>
-                <figure>
-                    <a href="https://github.com/stefan-apr/street_fighter_game">
-                        <figcaption>Street Fighter RPG Game</figcaption>
-                    </a>
-                    <div class="fig-image-div">
-                        <div class="detail-div">
-                            <img src="assets/images/details.jpg" alt="details" class="details" id="sf-rpg">
-                        </div>
-                        <a href="https://stefan-apr.github.io/street_fighter_game/">
-                            <img src="assets/images/ryu.png" alt="RPG Game" id="ryu" class="col2">
-                        </a>    
-                    </div>  
-                </figure>
-                <figure>
-                    <a href="https://github.com/stefan-apr/TriviaGame">
-                        <figcaption>Latin Phrases Trivia Game</figcaption>
-                    </a>
-                    <div class="fig-image-div">
-                        <div class="detail-div">
-                            <img src="assets/images/details.jpg" alt="details" class="details" id="trivia">
-                        </div>
-                        <a href="https://stefan-apr.github.io/TriviaGame/">
-                            <img src="assets/images/forum.png" alt="Trivia Game" id="forum" class="col1">   
-                        </a> 
-                    </div>  
-                </figure>
-                <figure>
-                    <a href="https://github.com/stefan-apr/Bogosort">
-                        <figcaption>Bogosorter</figcaption>
-                    </a>
-                    <div class="fig-image-div">
-                        <div class="detail-div">
-                            <img src="assets/images/details.jpg" alt="details" class="details" id="bogo">
-                        </div>
-                        <a href="https://stefan-apr.github.io/Bogosort/">
-                            <img src="assets/images/dice.png" alt="Bogosorter" id="dice" class="col2">      
-                        </a>
-                    </div>
-                </figure>
-                <figure>
-                    <a href="https://github.com/stefan-apr/RPS-Multiplayer">
-                        <figcaption>Rock Paper Scissors</figcaption>
-                    </a>
-                    <div class="fig-image-div">
-                        <div class="detail-div">
-                            <img src="assets/images/details.jpg" alt="details" class="details" id="rps">
-                        </div>
-                        <a href="https://stefan-apr.github.io/RPS-Multiplayer/">
-                            <img src="assets/images/rock.png" alt="Rock Paper Scissors" id="rock" class="col1">                              
-                        </a>
-                    </div>
-                </figure>
-                <figure>
-                    <a href="https://github.com/stefan-apr/Giphy-Project">
-                        <figcaption>GIF Grabber</figcaption>
-                    </a>
-                    <div class="fig-image-div">
-                        <div class="detail-div">
-                            <img src="assets/images/details.jpg" alt="details" class="details" id="gif">
-                        </div>
-                        <a href="https://stefan-apr.github.io/Giphy-Project/">
-                            <img src="https://media.giphy.com/media/2uf3Q3X4PPv4Q/200w_d.gif" alt="GIF Grabber" class="col2">
-                        </a>
-                    </div>
-                </figure>
-                <figure>
-                    <a href="https://github.com/stefan-apr/Friend_Finder">
-                        <figcaption>Friend Finder</figcaption>
-                    </a>
-                    <div class="fig-image-div">
-                        <div class="detail-div">
-                            <img src="assets/images/details.jpg" alt="details" class="details" id="friend-finder">
-                        </div>
-                        <a href="https://guarded-fortress-48319.herokuapp.com/">
-                            <img src="assets/images/friends.png" alt="Friend Finder" id="friend" class="col1">
-                        </a>
-                    </div>
-                </figure>
-                <figure>
-                    <a href="https://github.com/stefan-apr/News-Feeder">
-                        <figcaption>News Scraper</figcaption>
-                    </a>
-                    <div class="fig-image-div">
-                        <div class="detail-div">
-                            <img src="assets/images/details.jpg" alt="details" class="details" id="news-feeder">
-                        </div>
-                        <a href="https://obscure-brushlands-59312.herokuapp.com/">
-                            <img src="assets/images/news.png" alt="News Scraper" id="news" class="col2">
-                        </a>
-                    </div>
-                </figure>
-                <figure>
-                    <a href="https://github.com/stefan-apr/Clicky">
-                        <figcaption>Pokemon Clicky Game</figcaption>
-                    </a>
-                    <div class="fig-image-div">
-                        <div class="detail-div">
-                            <img src="assets/images/details.jpg" alt="details" class="details" id="clicky-game">
-                        </div>
-                        <a href="https://stefan-apr.github.io/Clicky/">
-                            <img src="assets/images/sandslash.png" alt="Clicky Game" id="clicky" class="col1">                              
-                        </a>
-                    </div>
-                </figure>
+            </div>
+            <div id="about">
+                
             </div>
         </div>
         <div class="footer">
@@ -184,6 +191,6 @@
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="assets/js/portfolio.js"></script>
+        <script src="assets/js/portfolio.js" type="module"></script>
     </body>
 </html>
