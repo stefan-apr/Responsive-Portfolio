@@ -58,5 +58,11 @@ export default [
         "desc": "blah clicky-game",
         "img": "assets/images/sandslash.png",
         "properName": "Pokemon Clicky Game"
+    },
+    {
+        "id": "hangman",
+        "desc": "blah hangman",
+        "img": "assets/images/seahawks.png",
+        "properName": "Seattle Seahawks Hangman"
     }
 ]

@@ -16,9 +16,14 @@ $(document).ready(function() {
             $("#back").css("display", "block");
             $("#about").empty();
             $("#about").append("<br>");
-            $("#about").append("<h2>" + detail.properName + "</h2>");
+            $("#about").append("<h2 id='detail-header'>" + detail.properName + "</h2>");
             $("#about").append("<br><br>");
-            $("#about").append("<img src='" + detail.img + "' alt='Profile' class='singleIMG'>");
+            $("#about").append("<img src='" + detail.img + "' alt='Profile' id='detail-img' class='singleIMG'>");
+            if(detail.id === "sf-rpg") {
+                $("#detail-img").attr("id", "ryu");
+            } else {
+                $("#ryu").attr("id", "detail-img");
+            }
             $("#about").append("<p>" + detail.desc + "</p>");
             $("#about").css("display", "block");
         });

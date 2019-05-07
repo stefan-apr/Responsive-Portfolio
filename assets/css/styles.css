@@ -221,6 +221,10 @@ input {
     width: 100%;
 }
 
+#detail-img {
+    object-fit: cover;
+}
+
 .submitButton {
     background-color: hsl(177, 70%, 34%); 
     color: hsl(46, 0%, 95%);
@@ -271,24 +275,31 @@ input {
     }
 
     [id = "major-header"] {
-        margin-left: 33%;
-        margin-right: 33%;
+        padding-left: 20%;
+        padding-right: 20%;
+        height: auto;
+        width: 60%;
+        text-align: center;
     }
 
     [id = "minor-header"] {
-        margin-left: 33%;
-        margin-right: 33%;
+        padding-left: 20%;
+        padding-right: 20%;
+        height: auto;
+        width: 60%;
+        text-align: center;
     }
 
     [class = "bodyHeader"] {
-        margin-left: 33%;
-        margin-right: 33%;
+        padding-left: 33%;
+        padding-right: 33%;
     }
 
     figure {
         width: 90%;
         height: auto;
-        margin: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
         display: block;
         float: left;
         clear: both;
@@ -345,5 +356,9 @@ input {
     [class = "bPSpan"] {
         float: none;
         width: 90%;
+    }
+
+    [id = "detail-header"] {
+        text-align: center;
     }
 }
