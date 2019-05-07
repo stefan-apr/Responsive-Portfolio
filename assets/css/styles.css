@@ -134,6 +134,10 @@ figcaption {
     height: 60px;
 }
 
+#portfolio-header {
+    height: 120px;
+}
+
 h2 {
     font-weight: bolder;
     font-size: 16pt;

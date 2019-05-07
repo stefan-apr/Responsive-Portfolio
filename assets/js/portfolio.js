@@ -13,6 +13,8 @@ $(document).ready(function() {
             }
             $("#port").css("display", "none");
             $("#updated-header").css("display", "none");
+            $("#nav-instructions").css("display", "none");
+            $("#portfolio-header").css("height", "60px");
             $("#back").css("display", "block");
             $("#about").empty();
             $("#about").append("<br>");
@@ -34,5 +36,7 @@ $(document).ready(function() {
         $("#back").css("display", "none");
         $("#updated-header").css("display", "inline");
         $("#port").css("display", "block");
+        $("#nav-instructions").css("display", "block");
+        $("#portfolio-header").css("height", "120px");
     });
 });
