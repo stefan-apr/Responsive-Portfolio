@@ -201,7 +201,7 @@ h3 {
     object-position: 50% 15%;
 }
 
-#rock, #forum, #dice, #news, #friend, #seasons {
+#rock, #forum, #dice, #news, #friend, #seasons, #practice, #clicky {
     object-fit: contain;
 }
 
@@ -226,7 +226,7 @@ input {
 }
 
 #detail-img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .submitButton {

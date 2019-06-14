@@ -56,7 +56,7 @@ export default [
     {
         "id": "clicky-game",
         "desc": "blah clicky-game",
-        "img": "assets/images/sandslash.png",
+        "img": "assets/images/pokeball.png",
         "properName": "Pokemon Clicky Game"
     },
     {
@@ -64,5 +64,11 @@ export default [
         "desc": "blah hangman",
         "img": "assets/images/seahawks.png",
         "properName": "Seattle Seahawks Hangman"
+    },
+    {
+        "id": "practice-engine",
+        "desc": "blah practice",
+        "img": "assets/images/practice.png",
+        "properName": "Practice Engine"
     }
 ]

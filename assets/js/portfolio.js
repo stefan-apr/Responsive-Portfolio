@@ -1,5 +1,4 @@
 import details from "./details.js";
-console.log(details);
 
 $(document).ready(function() {
     var chosen;
