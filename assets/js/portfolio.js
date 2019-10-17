@@ -25,6 +25,10 @@ $(document).ready(function() {
             } else {
                 $("#ryu").attr("id", "detail-img");
             }
+            $("#about").append("<h3>" + "Tools Used: " + "</h3>");
+            $("#about").append("<p>" + detail.toolsUsed + "</p>");
+            $("#about").append("<br>");
+            $("#about").append("<h3>" + "Description: " + "</h3>");
             $("#about").append("<p>" + detail.desc + "</p>");
             $("#about").css("display", "block");
         });

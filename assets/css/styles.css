@@ -14,6 +14,10 @@ h1 {
     position: relative;
 }
 
+.github-div {
+    position: relative;
+}
+
 .details {
     height: 30px;
     width: auto;
@@ -23,7 +27,21 @@ h1 {
     z-index: 1;
 }
 
+.githubs {
+    height: 30px;
+    width: auto;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+}
+
 .details:hover {
+    height: 35px;
+    width: auto;
+}
+
+.githubs:hover {
     height: 35px;
     width: auto;
 }
@@ -67,6 +85,7 @@ h1 .tab {
     padding-top: 25px;
     font-size: 6pt;
     color: hsl(255, 100%, 100%);
+    z-index: 2;
 }
 
 figure {
@@ -135,7 +154,7 @@ figcaption {
 }
 
 #portfolio-header {
-    height: 120px;
+    height: 80px;
 }
 
 h2 {
@@ -208,8 +227,9 @@ h3 {
 .singleIMG {
     float: left;
     margin-right: 15px;
-    width: 180px;
+    width: 150px;
     height: 130px;
+    object-fit: cover;
 }
 
 textarea {
